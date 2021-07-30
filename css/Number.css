@@ -1,0 +1,37 @@
+/* section numbers*/
+.section-numbers
+{
+position: relative;
+background-image: url(../images/background/background2.webp);
+background-size: cover;
+background-attachment: fixed;
+height: 300px;
+text-align: center;
+}
+
+.number-item
+{
+    float: left;
+    width: 25%;
+}
+.number-item .icon
+{
+    color: #6159FF;
+    margin-bottom: 15px;
+}
+.number-item-title
+{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.number-item-text
+{
+    color: #fff;
+    text-transform: capitalize;
+}
+.numbers-item
+{
+    padding: 100px 0;
+}

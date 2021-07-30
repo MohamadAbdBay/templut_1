@@ -1,0 +1,88 @@
+/* 2.1-Header */
+.header
+{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.4);
+}
+.header .logo
+{
+    width:40%;
+    float: left;
+}
+.header .logo img
+{
+    width: 20%;
+    margin-top: 15px;
+}
+.header .nav
+{
+    width: 60%;
+    float: left;
+    font-family:'Varela Round', sans-serif ;
+    text-align: right;
+}
+.header .nav > li
+{
+display: inline-block;
+text-align: center;
+}
+.header .nav  > li > a::after,
+.header .nav > li > a.active::after
+{
+    content: "";
+    display: block;
+    height: 2.5px;
+    margin-top: 2.5px;
+    transition: 1s;
+    background-color: #6159FF;
+}
+.header .nav > li > a.active::after
+{
+    width: 100%;
+}
+.header .nav > li > a::after
+{
+    width: 0;
+}
+.header .nav > li > a:hover:after
+{
+    width: 100%;
+}
+
+.header .nav > li > a
+{
+    color: #fff;
+    padding: 30px 15px;
+    display: block;
+    font-size: 14px;
+}
+.dropdown
+{
+    position: relative;
+}
+.dropdown-menu
+{
+    position: absolute;
+    background-color: #6159FF;
+    width: 130px;
+    text-align: center;
+    left: -50%;
+    top: 67%;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.dropdown-menu a
+{
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+.dropdown:hover .dropdown-menu
+{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s;
+} 

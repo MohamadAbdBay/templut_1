@@ -1,0 +1,53 @@
+
+/* section blog*/
+.blog
+{
+    background-color: #f8f8f8;
+}
+.blog-item
+{
+    width: 30%;
+    float: left;
+    background-color: #fff;
+}
+.blog-item-img img
+{
+width: 100%;
+}
+.blog-list
+{
+    margin: 10px 0;
+
+}
+.blog-list li
+{
+    display: inline-block;
+    margin-left: 0 5px;
+}
+.blog-item .blog-info
+{
+    padding: 15px;
+}
+.blog-list li i
+{
+color: #6159FF;
+}
+.blog-title
+{
+    font-weight: bolder;
+    margin: 20px 0;
+}
+.blog-desc
+{
+    color: #999;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.blog-link
+{
+    color: #6159FF;
+}
+.blog-item.mg
+{
+    margin: 0 5%;
+}

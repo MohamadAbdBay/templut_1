@@ -1,0 +1,137 @@
+/*
+  1-general styles
+  2-sections
+     2.1-header section
+     2.2-home section
+     2.3-about section
+     2.4-portfolio section
+     2.5-service section
+     2.6-prices section
+     2.6-team section
+     2.7-blog section
+     2.8-contact section
+     2.9-footer section
+
+
+*/
+
+/* general styles */
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.clear
+{
+    clear: both;
+}
+h1 ,h2 ,h3, h4, h5 ,h6 
+{
+    font-family: montserrat,sans-serif;
+}
+.ltr-efect,
+.tb-efect
+{
+position: relative;
+}
+.ltr-efect::after,
+.tb-efect::after
+{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-color: #333;
+}
+.ltr-efect::after
+{
+    width: 0;
+   transition: width 0.5s;
+}
+.tb-efect::after
+{
+    height: 0;
+    transition: height 0.5s;
+}
+.ltr-efect:hover::after
+{
+width: 100%;
+}
+.tb-efect:hover::after
+{
+height: 100%;
+}
+.about-item:hover .about-item-title
+{
+    color: #fff;
+    transition: color 0.5s;
+}
+button
+{
+    font-family: 'Varela Round', sans-serif;
+}
+.hover-opacity
+{
+transition: opacity 0.5s;
+}
+.hover-opacity:hover
+{
+    opacity: 0.8;
+}
+.overlay
+{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color:rgba(0, 0,0,0.7);
+}
+body
+{
+    font-family:'Varela Round', sans-serif;
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+}
+a
+{
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+}
+ul
+{
+    list-style: none;
+}
+.section-header
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-header .section-title
+{
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.section-header .line
+{
+    width: 70px;
+    height: 5px;
+    background-color: #6159FF;
+    display: block;
+    margin: 0 auto 70px auto;
+}
+.pd-y
+{
+    padding: 120px 0;
+}
+/* 2-sections*/
+
+
